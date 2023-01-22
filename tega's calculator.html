@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calculator</title>
+	<link rel="stylesheet" type="text/css" href="tega's calculator.css">
+</head>
+<body>
+<div class="cont">
+	<input type="text" id="disp">
+
+<div class="botton-cont">
+	<div class="buttons">
+		<button onclick="remove()">c</button>
+		<button onclick="display(value)" value="/">/</button>
+		<button onclick="display(value)" value="*">x</button>
+		<button id="back" onclick="back()"  onmouseover="cback()" onmouseout="rcback()" onmousedown="aback()" onmouseup="cback()" value="b"><img id="img" src="../poster backgrounds/back.jpg"></button>
+		<button onclick="display(value)" value="7">7</button>
+		<button onclick="display(value)" value="8">8</button>
+		<button onclick="display(value)" value="9">9</button>
+		<button onclick="display(value)" value="-">-</button>
+		<button onclick="display(value)" value="4">4</button>
+		<button onclick="display(value)" value="5">5</button>
+		<button onclick="display(value)" value="6">6</button>
+		<button onclick="display(value)" value="+">+</button>
+		<button onclick="display(value)" value="1">1</button>
+		<button onclick="display(value)" value="2">2</button>
+		<button onclick="display(value)" value="3">3</button>
+		<button onclick="display(value)" value=".">.</button>
+		<button onclick="display(value)" value="(">(</button>
+		<button onclick="display(value)" value="0">0</button>
+		<button onclick="display(value)" value=")">)</button>
+		<button onclick="equal()" class="equal">=</button>
+	</div>
+</div>
+</div>
+<script src="tega's calculator.js"></script>
+</body>
+</html>
