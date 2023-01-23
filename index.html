@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>calculator</title>
-	<link rel="stylesheet" type="text/css" href="tega's calculator.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="cont">
@@ -35,6 +35,39 @@
 	</div>
 </div>
 </div>
-<script src="tega's calculator.js"></script>
+<script>
+	
+var play = document.getElementById("disp");
+
+function display(value) {
+	play.value += value;
+}
+
+function remove() {
+	play.value = "";
+}
+
+function cback() {
+	document.getElementById("img").src = "../poster backgrounds/iback.jpg"
+}
+
+function rcback() {
+	document.getElementById("img").src = "../poster backgrounds/back.jpg"
+}
+
+function aback() {
+	document.getElementById("img").src = "../poster backgrounds/bback.jpg"
+}
+
+function equal() {
+	var answer = eval(play.value)
+
+	play.value = answer;
+}
+
+function back() {
+		play.value = play.value.slice(0,-1);
+	}
+	</script>
 </body>
 </html>
